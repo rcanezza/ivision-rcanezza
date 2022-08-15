@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ----------------------------- INDEX -------------------------------------------- */
+
+/* HEADER */
+.contenedor {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+}
+
+/* ----- HEADER ----- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.webNav {
+    width: 50%;
+}
+
+.navLista {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navLista li {
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* ----- MAIN ----- */
+
+.main {
+    grid-area: main;
+    background-color: blueviolet;
+    align-items: center;
+}
+
+.mainImagen {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    border: solid 1px;
+}
+
+.indexParte2 {
+    display: flex;
+    background-color: #4C53E6;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid;
+}
+
+.parte2Contenedor {
+    display: flex;
+    padding: 10px;
+    border: 1px solid;
+    justify-content: space-between;
+}
+
+.iconoTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin: 2px;
+}
+
+.iconoRepuestos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin: 2px;
+}
+
+.iconoRepuestos p {
+    display: flex;
+}
+
+.iconoTarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin: 2px;
+}
+
+.iconoCuotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin: 2px;
+}
+
+/* ----- Footer ----- */
+
+.footer {
+    grid-area: footer;
+    background-color: brown;
+    width: 100%;
+}
+
+/* ---------------------------------------------Local--------------------------------------------- */
+
+.mainLocal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.localImagen {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    background-color: #6E75FF;
+}
+
+.contenedorDireccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.contenedorDireccion h3 {
+    padding-top: 15px;
+}
+
+.localDireccion {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+.localUbicacionRecursoResponsive {
+    display: none;
+}
+
+
+/* ---------------------------------------------Responsive Mobile--------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* -------------------------Index------------------------- */
+    .header {
+        justify-content: left;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .webNav {
+        width: 50%;
+        border: 0px;
+    }
+
+    .navLista {
+        width: 100%;
+    }
+
+    .navLista li {
+        width: 100%;
+    }
+
+    .parte2Contenedor {
+        flex-wrap: wrap;
+    }
+
+    .iconoTools {
+        display: flex;
+        width: 100%;
+    }
+
+    .iconoRepuestos {
+        display: flex;
+        width: 100%;
+    }
+
+    .iconoTarjeta {
+        display: flex;
+        width: 100%;
+    }
+
+    .iconoCuotas {
+        display: flex;
+        width: 100%;
+    }
+
+    /* -------------------------Local------------------------- */
+
+    .localUbicacionRecurso {
+        display: none;
+    }
+
+    .localUbicacionRecursoResponsive {
+        display: flex;
+    }
+}
